@@ -6,15 +6,21 @@ in the array. If it's not in the array, the function should return -1. Solve
 this using a loop.
 */
 
-// Your code here 
+function getIndexOf(arr, elem){
+    if(!arr.includes(elem)){
+        return -1;
+    } else {
+        return arr.indexOf(elem);
+    }
+}
 
 
-// console.log(getIndexOf(['a', 'b', 'c', 'e'], 'c')); // 2
-// console.log(getIndexOf(['a', 'b', 'c', 'e'], 'e')); // 3
-// console.log(getIndexOf(['a', 'b', 'c', 'e'], 'z')); // -1
-// console.log(getIndexOf([43, -7, 11, 13, 43], 43));  // 0
-// console.log(getIndexOf([43, -7, 11, 13], 1));       // -1
-// console.log(getIndexOf([], 3));                     // -1
+console.log(getIndexOf(['a', 'b', 'c', 'e'], 'c')); // 2
+console.log(getIndexOf(['a', 'b', 'c', 'e'], 'e')); // 3
+console.log(getIndexOf(['a', 'b', 'c', 'e'], 'z')); // -1
+console.log(getIndexOf([43, -7, 11, 13, 43], 43));  // 0
+console.log(getIndexOf([43, -7, 11, 13], 1));       // -1
+console.log(getIndexOf([], 3));                     // -1
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = getIndexOf;
